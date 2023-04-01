@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>landing page</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="div1">
+        <div class="div_1">
+          <img src="/LOGO.jpg" alt="" height="50" width="50" />
+          <h2 class="h2">inkling</h2>
+        </div>
+        <div class="ref">
+          <a href="about.html">About Us</a>
+          <a href="about.html">Contact Us</a>
+        </div>
+      </div>
+      <hr />
+      <div class="free">
+        <h3 class="h4">Free eBook</h3>
+        <h3 class="h4_1">Empowering Remote Worker</h3>
+      </div>
+
+      <main>
+        <div class="div2">
+          <p class="p1">
+            Make sure your distributed workforce is equipped with the proper
+            knowledge and information they need to succed-every time.
+          </p>
+          <br />
+          <p>
+            Gone are the days when every employee worked in a single office, and
+            institutional knowledge could simply be shared in a handbook or an
+            all- hands meeting. Today, the typical organization's workforce
+            consists of field, branch, staff, and other non-corperate employees,
+            and many of them are scattered across time zones, continents, and
+            workforce devices.
+          </p>
+          <br />
+
+          <a href="about.html" class="p3">Read More</a>
+        </div>
+        <div>
+          <form action="*">
+            <p class="p4">Sign up for your copy:</p>
+            <p>
+              <input type="text" placeholder="First Name" required />
+            </p>
+            <p>
+              <input type="text" placeholder="Last Name" required />
+            </p>
+            <p>
+              <input type="email" placeholder="Email Address" required />
+            </p>
+            <p>
+              <input type="text" placeholder="Job Title" required />
+            </p>
+            <p>
+              <input type="text" placeholder="Company Name" required /> <br />
+            </p>
+            <p>
+              <input type="tel" placeholder="Phone Number" required />
+            </p>
+            <div class="container">
+              <button type="summit" class="btn" onclick="openPopup()">
+                SUBMIT
+              </button>
+              <div class="popup" id="popup">
+                <p>Submitted successfully!</p>
+                <button type="button" onclick="closePopup()">OK</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </main>
+      <div class="as">
+        <aside>
+          In this eBook, well show you that with a mobile -friendly content
+          platform, you can increase employee productivity while slashing the
+          costs associated with training, onboading and employee misinformation.
+        </aside>
+      </div>
+    </section>
+    <script>
+      let popup = document.getElementById("popup");
+      function openPopup() {
+        popup.classList.add("open-popup");
+      }
+      function closePopup() {
+        popup.classList.remove("open-popup");
+      }
+    </script>
+  </body>
+</html>
